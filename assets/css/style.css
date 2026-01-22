@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600&display=swap');
+
 html, body {
   margin: 0;
   padding: 0;
   background: #0b0b0b;
   color: #e6e6e6;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'JetBrains Mono', monospace;
 }
 
 main {
@@ -16,7 +18,7 @@ main {
 
 h1 {
   font-size: 3rem;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
 }
 
 p {
