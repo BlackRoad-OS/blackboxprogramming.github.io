@@ -1,15 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap');
 
 :root {
+  /* Core */
   --bg: #000000;
   --fg: #ffffff;
-  --muted: #9a9a9a;
+  --muted: #8a8a8a;
 
-  /* BlackRoad neon set */
-  --br-orange: #FF9D00;
-  --br-pink:   #FF0066;
-  --br-purple: #7700FF;
-  --br-blue:   #0066FF;
+  /* BlackRoad Canon Palette */
+  --br-orange-1: #FF9D00;
+  --br-orange-2: #FF6B00;
+
+  --br-pink-1:   #FF0066;
+  --br-pink-2:   #FF006B;
+
+  --br-purple-1: #D600AA;
+  --br-purple-2: #7700FF;
+
+  --br-blue-1:   #0066FF;
 }
 
 * {
@@ -25,12 +32,35 @@ body {
 }
 
 a {
-  color: var(--fg);
+  color: var(--br-blue-1);
   text-decoration: none;
+}
+
+a:hover {
+  color: var(--br-pink-1);
 }
 
 hr {
   border: none;
-  border-top: 1px solid var(--muted);
+  border-top: 1px solid var(--br-purple-1);
   margin: 24px 0;
+}
+
+.badge {
+  padding: 4px 8px;
+  border: 1px solid var(--br-orange-1);
+  color: var(--br-orange-1);
+  display: inline-block;
+}
+
+.status-online {
+  color: var(--br-blue-1);
+}
+
+.status-warn {
+  color: var(--br-orange-1);
+}
+
+.status-hot {
+  color: var(--br-pink-1);
 }
